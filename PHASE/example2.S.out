@@ -1,0 +1,128 @@
+*************************************************************
+****                                                     ****
+****            Output from PHASE v2.1.1                 ****
+****  Code by M Stephens, with contributions from N Li   ****
+****                                                     ****
+*************************************************************
+
+BEGIN COMMAND_LINE 
+PHASE -S332874 -MS example2.txt example2.S.out 
+END COMMAND_LINE 
+
+BEGIN OUTFILE_LIST
+example2.S.out_freqs : haplotype frequency estimates
+example2.S.out_pairs : most likely haplotype pairs for each individual
+example2.S.out_monitor : file for monitoring convergence
+END OUTFILE_LIST
+
+BEGIN INPUT_SUMMARY
+Number of Individuals: 8
+Number of Loci: 3
+Positions of loci: 100 200 300 
+END INPUT_SUMMARY
+
+List of haplotypes found in best reconstruction, with counts.
+(See file example2.S.out_freqs for haplotype population frequency estimates)
+
+BEGIN LIST_SUMMARY
+         1         000    3.000000
+         2         001    3.000000
+         3         010    2.000000
+         4         100    2.000000
+         5         110    1.000000
+         6         111    5.000000
+END LIST_SUMMARY
+
+
+Summary of best reconstruction
+(numbers refer to the list of haplotypes given above)
+
+BEGIN BESTPAIRS_SUMMARY
+#1: (1,2)
+#2: (1,6)
+#3: (3,6)
+#4: (4,6)
+#5: (2,3)
+#6: (4,6)
+#7: (2,6)
+#8: (1,5)
+END BESTPAIRS_SUMMARY
+
+
+Haplotype estimates for each individual, with uncertain phases enclosed in ()
+and uncertain genotypes enclosed in []:
+
+BEGIN BESTPAIRS1
+0 #1
+0 0 0 
+0 0 1 
+0 #2
+0 (0) (0) 
+1 (1) (1) 
+0 #3
+(0) 1 0 
+(1) 1 1 
+0 #4
+1 (0) 0 
+1 (1) 1 
+0 #5
+0 (0) 1 
+0 (1) 0 
+0 #6
+1 (0) 0 
+1 (1) 1 
+0 #7
+(0) 0 1 
+(1) 1 1 
+0 #8
+(0) 0 0 
+(1) 1 0 
+END BESTPAIRS1
+
+
+Haplotype estimates for each individual, with uncertain phases enclosed in ()
+and uncertain genotypes enclosed in []
+with phase known positions indicated by =
+
+BEGIN BESTPAIRS2
+0 #1
+= = 0 
+= = 1 
+0 #2
+0 (0) (0) 
+1 (1) (1) 
+0 #3
+(0) = 0 
+(1) = 1 
+0 #4
+= (0) 0 
+= (1) 1 
+0 #5
+= (0) 1 
+= (1) 0 
+0 #6
+= (0) 0 
+= (1) 1 
+0 #7
+(0) 0 = 
+(1) 1 = 
+0 #8
+(0) 0 = 
+(1) 1 = 
+END BESTPAIRS2
+
+
+Phase probabilities at each site
+with phase known positions indicated by =
+and missing data positions indicated by ?
+
+BEGIN PHASEPROBS
+= = 1.00 
+0.90 0.88 0.62 
+0.53 = 1.00 
+= 0.51 1.00 
+= 0.52 1.00 
+= 0.52 1.00 
+0.58 1.00 = 
+0.54 1.00 = 
+END PHASEPROBS

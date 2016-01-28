@@ -1,0 +1,266 @@
+*************************************************************
+****                                                     ****
+****            Output from PHASE v2.1.1                 ****
+****  Code by M Stephens, with contributions from N Li   ****
+****                                                     ****
+*************************************************************
+
+BEGIN COMMAND_LINE 
+PHASE -MR1 1 example3.txt example3.out 
+END COMMAND_LINE 
+
+BEGIN OUTFILE_LIST
+example3.out_freqs : haplotype frequency estimates
+example3.out_pairs : most likely haplotype pairs for each individual
+example3.out_recom : estimates of recombination parameters
+example3.out_monitor : file for monitoring convergence
+END OUTFILE_LIST
+
+BEGIN INPUT_SUMMARY
+Number of Individuals: 23
+Number of Loci: 54
+Positions of loci: 2387 2521 2638 2996 3094 3157 3991 4249 4366 4648 4990 4993 7167 7854 7988 9473 9534 9600 9663 10381 11472 11554 11684 11741 11890 12145 12269 12403 12919 13388 13528 13577 13936 13973 14299 14455 15932 19228 19277 22296 22749 23463 23533 23689 24426 25580 26076 26512 27003 28314 28375 28685 29225 29894 
+END INPUT_SUMMARY
+
+List of haplotypes found in best reconstruction, with counts.
+(See file example3.out_freqs for haplotype population frequency estimates)
+
+BEGIN LIST_SUMMARY
+         1 DGTCGGACACCGGAACCAGTCTTCAGICGAITCGAAGAICCTGGTTGCCITAAD    7.000000
+         2 DGTCGGACACCGGAACCAGTCTTCAGICGAITCGAAGAICCTGGTTGCCDTAAD    1.000000
+         3 DGTCGGACACCGGAACCAGTCTTCAGICGAITCGAAGAIGCCAGACGCCITGGI    1.000000
+         4 DGTCGGACACCGGAACCAGTCTTCAGICGAITCGAAGAIGCTGGTTGCCDTAAD    1.000000
+         5 DGTCGGACACCGGAACCAGTCTTCAGICGAITCGAAGAIGTCAAACGATITGGI    3.000000
+         6 DGTCGGACACCGGAACCAGTCTTCAGICGAITCGAAGADCCTGGTTGCCITAAD    1.000000
+         7 DGTCGGACACCGGAACCAGTCTTCAGICGAITCGAAGCDCCTGGTTGCCITAAD    1.000000
+         8 DGTCGGACACCGGAACCAGTCTTCAGICGAITCGAAGCDGTCAAACGATITGGI    1.000000
+         9 DGTCGGACACCGGAACCAGTCTTCAGICGGITCGAAGADCCTGGTTGCCDTAAD    2.000000
+        10 DGTCGGACACCGGAACCAGTCTTCAGDCGAITCGAAGAICCTGGTTGCCITAAD    1.000000
+        11 DGTCGGACACCGGAACCAGTCTTCAGDCGAITCGAAGADCCTGGTTGCCITAAD    1.000000
+        12 DGTCGGACACCGGAACCAATCTTCAGICGAITCGAAGAICCTGGTTGCCITAAD    2.000000
+        13 DATAGACCTACAAGATTAGTCTTTGGDCAADTTAATGADCCTGGTTGCCDTAAD    1.000000
+        14 DATAGACCTACAAGATTAGTCTTTGGDCAADTTAATGADCTCAAACGATITGGI    1.000000
+        15 DATAGACCTACAAGATTAGTCTTTGGDCAADTTAATGADGTCAAACAATIGGGI    1.000000
+        16 DATAAACCTACAAGACTAGTCTTTGADCAADTTAATGADCCTGGTCGCCITAAD    1.000000
+        17 DATAAACCTACAAGATCAGTCTTTGADCAADTTAATGADCTCAAACGATITGGI    1.000000
+        18 DATAAACCTACAAGATTAGTCTTTGGDCAADTTAATGADGTCAAACGATITGGI   11.000000
+        19 DATAAACCTACAAGATTAGTCTTTGADCAADTTAATGADCCTGGTTGCCITAAD    3.000000
+        20 DATAAACCTACAAGATTAGTCTTTGADCAADTTAATGADGTCAAACAATIGGGI    1.000000
+        21 DATAAACCTACAAGATTAATCTTTGADCAADTTAATGADCCTGGTTGCCITAAD    1.000000
+        22 IGGCAGATACTAAGCTTGGCACATAAIGAAIATGGAAAICCTGGTTGCCITAAD    1.000000
+        23 IGGCAGATACTAAGCTTGGCACATAAIGAAIATGGAAADGTCAAACACTIGGGI    2.000000
+END LIST_SUMMARY
+
+
+Summary of best reconstruction
+(numbers refer to the list of haplotypes given above)
+
+BEGIN BESTPAIRS_SUMMARY
+E001: (1,2)
+E002: (18,18)
+E003: (12,21)
+E004: (1,1)
+E005: (1,20)
+E006: (18,18)
+E007: (9,9)
+E008: (5,16)
+E009: (1,6)
+E010: (5,19)
+E011: (1,5)
+E012: (13,18)
+E013: (18,18)
+E014: (10,11)
+E015: (18,23)
+E016: (18,23)
+E017: (12,22)
+E018: (8,17)
+E019: (15,18)
+E020: (14,18)
+E021: (3,4)
+E022: (7,19)
+E023: (1,19)
+END BESTPAIRS_SUMMARY
+
+
+Haplotype estimates for each individual, with uncertain phases enclosed in ()
+and uncertain genotypes enclosed in []:
+
+BEGIN BESTPAIRS1
+0 E001
+D G T C G G A C A C C G G A A C C A [G] T C T T C A G I C G A I T C G A A G A I C C T G G T T G C C I T A A D 
+D G T C G G A C A C C G G A A C C A [G] T C T T C A G I C G A I T C G A A G A I C C T G G T T G C C D T A A D 
+0 E002
+D A T A A A C C T A C A A G A T T A G T C T T T G G D C A A D T T A A T G A D G T C A A A C G A T I T G G I 
+D A T A A A C C T A C A A G A T T A G T C T T T G G D C A A D T T A A T G A D G T C A A A C G A T I T G G I 
+0 E003
+D G T C G G A C A C C G G A A C C A A T C T T C A G [I] C G A I T C G A A G  A  I C C T G G T T G C C I T A A D 
+D A T A A A C C T A C A A G A T T A A T C T T T G A  D  C A A D T T A A T G [A] D C C T G G T T G C C I T A A D 
+0 E004
+D G T C G G A C A C C G G A A C C A G T C T T C A G [I] C G A I T C G A A G A I C C T G G T T G C C I T A A D 
+D G T C G G A C A C C G G A A C C A G T C T T C A G  I  C G A I T C G A A G A I C C T G G T T G C C I T A A D 
+0 E005
+D G T C G G A C A C C G G A A C C A G T C T T C A G I C G A I T C G A A G  A  I (C) (C) (T) (G) (G) (T) (T) (G) (C) (C) I (T) (A) (A) (D) 
+D A T A A A C C T A C A A G A T T A G T C T T T G A D C A A D T T A A T G [A] D (G) (T) (C) (A) (A) (A) (C) (A) (A) (T) I (G) (G) (G) (I) 
+0 E006
+D A T A A A C C T A C A A G A T T A G T C T T T G G D C A A D T T A A T G A D G T C A A A C G A T I T G G I 
+D A T A A A C C T A C A A G A T T A G T C T T T G G D C A A D T T A A T G A D G T C A A A C G A T I T G G I 
+0 E007
+D G T C G G A C A C C G G A A C C A [G] T C T T C A G I C G G I T C G A A G A D C C T G G T T G C C D T A A D 
+D G T C G G A C A C C G G A A C C A  G  T C T T C A G I C G G I T C G A A G A D C C T G G T T G C C D T A A D 
+0 E008
+D G T C G G A C A C C G G A A C C A G T C T T C A G I C G A I T C G A A G [A] [I] [G] (T) (C) (A) (A) (A) C G (A) (T) I T (G) (G) (I) 
+D A T A A A C C T A C A A G A C T A G T C T T T G A D C A A D T T A A T G [A]  D  [C] (C) (T) (G) (G) (T) C G (C) (C) I T (A) (A) (D) 
+0 E009
+D G T C G G A C A C C G G A A C C A G T C T T C A G I C G A I T C G A A G  A  I C C T G G T T G C C I T A A D 
+D G T C G G A C A C C G G A A C C A G T C T T C A G I C G A I T C G A A G [A] D C C T G G T T G C C I T A A D 
+0 E010
+D G T C G G A C A C C G G A A C C A G T C T T C A G I C G A I T C G A A G [A] [I] G T C A A A C G A T I T G G I 
+D A T A A A C C T A C A A G A T T A G T C T T T G A D C A A D T T A A T G [A]  D  C C T G G T T G C C I T A A D 
+0 E011
+D G T C G G A C A C C G G A A C C A G T C T T C A G I C G A I T C G A A G A I C C T G G T T G C C I T A A D 
+D G T C G G A C A C C G G A A C C A G T C T T C A G I C G A I T C G A A G A I G T C A A A C G A T I T G G I 
+0 E012
+D A T A (G) A C C T A C A A G A T T A G T C T T T G G D C A A D T T A A T G A D [C] C T G G T T G C C D T A A D 
+D A T A (A) A C C T A C A A G A T T A G T C T T T G G D C A A D T T A A T G A D [G] T C A A A C G A T I T G G I 
+0 E013
+D A T A A A C C T A C A A G A T T A G T C T T T G G D C A A D T T A A T G A D G T C A A A C G A T I T G G I 
+D A T A A A C C T A C A A G A T T A G T C T T T G G D C A A D T T A A T G A D G T C A A A C G A T I T G G I 
+0 E014
+D G T C G G A C A C C G G A A C C A [G] T C T T C A G D C G A I T C G A A G  A  I C C T G G T T G C C  I  T A A D 
+D G T C G G A C A C C G G A A C C A  G  T C T T C A G D C G A I T C G A A G [A] D C C T G G T T G C C [I] T A A D 
+0 E015
+D A T A A A C C T A C A A G A T T A G T C T T T G G D C A A D T T A A T G A D G T C A A A C G A T I T G G I 
+I G G C A G A T A C T A A G C T T G G C A C A T A A I G A A I A T G G A A A D G T C A A A C A C T I G G G I 
+0 E016
+D A T A A A C C T A C A A G A T T A G T C T T T G G D C A A D T T A A T G A D G T C A A A C G A T I T G G I 
+I G G C A G A T A C T A A G C T T G G C A C A T A A I G A A I A T G G A A A D G T C A A A C A C T I G G G I 
+0 E017
+D G T C G G A C A C C G G A A C C A A T C T T C A G I C G A I T C G A A G A I C C T G G T T G C C I T A A D 
+I G G C A G A T A C T A A G C T T G G C A C A T A A I G A A I A T G G A A A I C C T G G T T G C C I T A A D 
+0 E018
+D G T C G G A C A C C G G A A  C  C A G T C T T C A G [I] C G A I T C G A A G (C) D (G) T C A A A C G A T I T G G I 
+D A T A A A C C T A C A A G A [T] C A G T C T T T G A  D  C A A D T T A A T G (A) D (C) T C A A A C G A T I T G G I 
+0 E019
+D A T A (G) A C C T A C A A G A T T A G T C T T T G G D C A A D T T A A T G A D G T C A A A C A A T I G G G I 
+D A T A (A) A C C T A C A A G A T T A G T C T T T G G D C A A D T T A A T G A D G T C A A A C G A T I T G G I 
+0 E020
+D A T A (G) A C C T A C A A G A T T A G T C T T T G G D C A A D T T A A T G A D C T C A A A C G A T I T G G I 
+D A T A (A) A C C T A C A A G A T T A G T C T T T G G D C A A D T T A A T G A D G T C A A A C G A T I T G G I 
+0 E021
+D G T C G G A C A C C G G A A C C A  G  T C T T C A G I C G A I T C G A A G A I G C C A G A C G C C (I) T G G I 
+D G T C G G A C A C C G G A A C C A [G] T C T T C A G I C G A I T C G A A G A I G C T G G T T G C C (D) T A A D 
+0 E022
+D G T C G G A C A C C G G A A C C A G T C T T C A G I C G A I T C G A A G (C) D C C T G G T T G C C I T A A D 
+D A T A A A C C T A C A A G A T T A G T C T T T G A D C A A D T T A A T G (A) D C C T G G T T G C C I T A A D 
+0 E023
+D G T C G G A C A C C G G A A C C A G T C T T C A G I C G A I T C G A A G  A  I C C T G G T T G C C I T A A D 
+D A T A A A C C T A C A A G A T T A G T C T T T G A D C A A D T T A A T G [A] D C C T G G T T G C C I T A A D 
+END BESTPAIRS1
+
+
+Haplotype estimates for each individual, with uncertain phases enclosed in ()
+and uncertain genotypes enclosed in []
+with phase known positions indicated by =
+
+BEGIN BESTPAIRS2
+0 E001
+= = = = = = = = = = = = = = = = = = ? = ? ? = = = = = = = = = = ? ? ? ? = = = = = ? ? = = = = = = I = = = = 
+= = = = = = = = = = = = = = = = = = ? = ? ? = = = = = = = = = = ? ? ? ? = = = = = ? ? = = = = = = D = = = = 
+0 E002
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+0 E003
+= G = C G G A = A C = G G A = ? C = = = = = = C A G ? = ? = I = C G = A = ? I = = = = = = = = = = = = = = = 
+= A = A A A C = T A = A A G = ? T = = = = = = T G A ? = ? = D = T A = T = ? D = = = = = = = = = = = = = = = 
+0 E004
+= = = = = = = = = = = = = = = = = = = = = = = = = = ? = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+= = = = = = = = = = = = = = = = = = = = = = = = = = ? = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+0 E005
+= G = C G G A = A C = G G A = C C = = = = = = C A G I = G = I = C G = A = ? I (C) (C) (T) (G) (G) (T) (T) (G) (C) (C) = (T) (A) (A) (D) 
+= A = A A A C = T A = A A G = T T = = = = = = T G A D = A = D = T A = T = ? D (G) (T) (C) (A) (A) (A) (C) (A) (A) (T) = (G) (G) (G) (I) 
+0 E006
+= ? = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+= ? = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+0 E007
+= = = = = = = = = = = = = = = = = = ? = = = = = = = = = = = ? ? = = = = = = = = = = = = = = = = = = = = = = 
+= = = = = = = = = = = = = = = = = = ? = = = = = = = = = = = ? ? = = = = = = = = = = = = = = = = = = = = = = 
+0 E008
+? ? ? ? G G A = A C = G G A = = C = = ? = = = C A G ? = G = I = C G = A = ? ? ? (T) (C) (A) (A) (A) = = (A) (T) = = (G) (G) (I) 
+? ? ? ? A A C = T A = A A G = = T = = ? = = = T G A ? = A = D = T A = T = ? ? ? (C) (T) (G) (G) (T) = = (C) (C) = = (A) (A) (D) 
+0 E009
+= = = = = = = = = = = = = = = = = = = = = ? = = = = = = = = = = = = = = = ? I = = = = = = = = = = = = = = = 
+= = = = = = = = = = = = = = = = = = = = = ? = = = = = = = = = = = = = = = ? D = = = = = = = = = = = = = = = 
+0 E010
+= G = ? ? ? A = A C = G G A = C C = = = = = = C A G ? = G = I = C G = A = ? ? G T C A A A C = A T = = G G ? 
+= A = ? ? ? C = T A = A A G = T T = = = = = = T G A ? = A = D = T A = T = ? ? C C T G G T T = C C = = A A ? 
+0 E011
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = ? = = = ? ? = = = = = C C T G G T T = C C = = A A D 
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = ? = = = ? ? = = = = = G T C A A A C = A T = = G G I 
+0 E012
+= = = = (G) = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ? C T G G T T = C C D = A A D 
+= = = = (A) = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ? T C A A A C = A T I = G G I 
+0 E013
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+0 E014
+= = = ? = = = = = = = = = = = = = = ? = = = = = = = = = = = = = = = = = = ? I = = = = = = = = = = ? = = = = 
+= = = ? = = = = = = = = = = = = = = ? = = = = = = = = = = = = = = = = = = ? D = = = = = = = = = = ? = = = = 
+0 E015
+D A T A = A C C T A C = = = A = = A = T C T T = G G ? C = = ? ? = A A T G = = = = = = = = = G ? = = T = = = 
+I G G C = G A T A C T = = = C = = G = C A C A = A A ? G = = ? ? = G G A A = = = = = = = = = A ? = = G = = = 
+0 E016
+D ? T A = A ? C T A C = = = A = = A = T C T T = G ? D C = = D T = A A T G = = = = = = = = = G A = = T = = = 
+I ? G C = G ? T A C T = = = C = = G = C A C A = A ? I G = = I A = G G A A = = = = = = = = = A C = = G = = = 
+0 E017
+D = T = G = = C = = C G G A A C C A A T C T T C = G = C G ? ? T C = A = G = = = = = = = = = = = = = = = = = 
+I = G = A = = T = = T A A G C T T G G C A C A T = A = G A ? ? A T = G = A = = = = = = = = = = = = = = = = = 
+0 E018
+= G = C G G A = A C = G G A = ? = = = = = = = C A G ? = G = I = C G = A = (C) = (G) = = = = = = = = = = = = = ? 
+= A = A A A C = T A = A A G = ? = = = = = = = T G A ? = A = D = T A = T = (A) = (C) = = = = = = = = = = = = = ? 
+0 E019
+= = = = (G) = = = = = = = = = = = = = = = ? = = = ? = ? = = ? ? ? = = = = = = = = = = = = = = A = = = G = = = 
+= = = = (A) = = = = = = = = = = = = = = = ? = = = ? = ? = = ? ? ? = = = = = = = = = = = = = = G = = = T = = = 
+0 E020
+= ? = = (G) = = = = = = = = = = = = = = = = = = = = = ? = = = = = = = = = = = = C = = = = = = = ? = = = = = = 
+= ? = = (A) = = = = = = = = = = = = = = = = = = = = = ? = = = = = = = = = = = = G = = = = = = = ? = = = = = = 
+0 E021
+= = = = = = = = = = = = = = = ? ? ? ? = = = = = = = = = = ? ? = = = = = = = = = = C A = A C = = = (I) = G G I 
+= = = = = = = = = = = = = = = ? ? ? ? = = = = = = = = = = ? ? = = = = = = = = = = T G = T T = = = (D) = A A D 
+0 E022
+= G = C G G A = A C = G G A = C C = = = = = = C A G I = G = I = C G = A = (C) = = = = = = = = = = = = = = = = 
+= A = A A A C = T A = A A G = T T = = = = = = T G A D = A = D = T A = T = (A) = = = = = = = = = = = = = = = = 
+0 E023
+= G = C G G A = A C = G G A = ? ? ? = = = = = C A G I = G = I ? C G = A = ? I = = = = = = = = ? = = = = = = 
+= A = A A A C = T A = A A G = ? ? ? = = = = = T G A D = A = D ? T A = T = ? D = = = = = = = = ? = = = = = = 
+END BESTPAIRS2
+
+
+Phase probabilities at each site
+with phase known positions indicated by =
+and missing data positions indicated by ?
+
+BEGIN PHASEPROBS
+= = = = = = = = = = = = = = = = = = ? = ? ? = = = = = = = = = = ? ? ? ? = = = = = ? ? = = = = = = 1.00 = = = = 
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+= 1.00 = 1.00 1.00 1.00 1.00 = 1.00 1.00 = 1.00 1.00 1.00 = ? 1.00 = = = = = = 1.00 1.00 1.00 ? = ? = 1.00 = 1.00 1.00 = 1.00 = ? 1.00 = = = = = = = = = = = = = = = 
+= = = = = = = = = = = = = = = = = = = = = = = = = = ? = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+= 1.00 = 1.00 1.00 1.00 1.00 = 1.00 1.00 = 1.00 1.00 1.00 = 1.00 1.00 = = = = = = 1.00 1.00 1.00 1.00 = 1.00 = 1.00 = 1.00 1.00 = 1.00 = ? 1.00 0.51 0.51 0.51 0.51 0.51 0.51 0.51 0.51 0.51 0.51 = 0.51 0.51 0.51 0.51 
+= ? = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+= = = = = = = = = = = = = = = = = = ? = = = = = = = = = = = ? ? = = = = = = = = = = = = = = = = = = = = = = 
+? ? ? ? 1.00 1.00 1.00 = 1.00 1.00 = 1.00 1.00 1.00 = = 1.00 = = ? = = = 1.00 1.00 1.00 ? = 1.00 = 1.00 = 1.00 1.00 = 1.00 = ? ? ? 0.74 0.74 0.74 0.74 0.74 = = 0.74 0.74 = = 0.74 0.74 0.74 
+= = = = = = = = = = = = = = = = = = = = = ? = = = = = = = = = = = = = = = ? 1.00 = = = = = = = = = = = = = = = 
+= 1.00 = ? ? ? 1.00 = 1.00 1.00 = 1.00 1.00 1.00 = 1.00 1.00 = = = = = = 1.00 1.00 1.00 ? = 1.00 = 1.00 = 1.00 1.00 = 1.00 = ? ? 1.00 1.00 1.00 1.00 1.00 1.00 1.00 = 1.00 1.00 = = 1.00 1.00 ? 
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = ? = = = ? ? = = = = = 1.00 1.00 1.00 1.00 1.00 1.00 1.00 = 1.00 1.00 = = 1.00 1.00 1.00 
+= = = = 0.58 = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ? 1.00 1.00 1.00 1.00 1.00 1.00 = 1.00 1.00 1.00 = 1.00 1.00 1.00 
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+= = = ? = = = = = = = = = = = = = = ? = = = = = = = = = = = = = = = = = = ? 1.00 = = = = = = = = = = ? = = = = 
+1.00 1.00 1.00 1.00 = 1.00 1.00 1.00 1.00 1.00 1.00 = = = 1.00 = = 1.00 = 1.00 1.00 1.00 1.00 = 1.00 1.00 ? 1.00 = = ? ? = 1.00 1.00 1.00 1.00 = = = = = = = = = 0.98 ? = = 0.98 = = = 
+1.00 ? 1.00 1.00 = 1.00 ? 1.00 1.00 1.00 1.00 = = = 1.00 = = 1.00 = 1.00 1.00 1.00 1.00 = 1.00 ? 1.00 1.00 = = 1.00 1.00 = 1.00 1.00 1.00 1.00 = = = = = = = = = 1.00 0.97 = = 1.00 = = = 
+1.00 = 1.00 = 1.00 = = 1.00 = = 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 0.95 1.00 1.00 1.00 1.00 1.00 = 1.00 = 1.00 1.00 ? ? 1.00 1.00 = 1.00 = 1.00 = = = = = = = = = = = = = = = = = 
+= 1.00 = 1.00 1.00 1.00 1.00 = 1.00 1.00 = 1.00 1.00 1.00 = ? = = = = = = = 1.00 1.00 1.00 ? = 1.00 = 1.00 = 1.00 1.00 = 1.00 = 0.55 = 0.74 = = = = = = = = = = = = = ? 
+= = = = 0.72 = = = = = = = = = = = = = = = ? = = = ? = ? = = ? ? ? = = = = = = = = = = = = = = 1.00 = = = 1.00 = = = 
+= ? = = 0.73 = = = = = = = = = = = = = = = = = = = = = ? = = = = = = = = = = = = 1.00 = = = = = = = ? = = = = = = 
+= = = = = = = = = = = = = = = ? ? ? ? = = = = = = = = = = ? ? = = = = = = = = = = 1.00 1.00 = 1.00 1.00 = = = 0.90 = 1.00 1.00 1.00 
+= 1.00 = 1.00 1.00 1.00 1.00 = 1.00 1.00 = 1.00 1.00 1.00 = 1.00 1.00 = = = = = = 1.00 1.00 1.00 1.00 = 1.00 = 1.00 = 1.00 1.00 = 1.00 = 0.57 = = = = = = = = = = = = = = = = 
+= 1.00 = 1.00 1.00 1.00 1.00 = 1.00 1.00 = 1.00 1.00 1.00 = ? ? ? = = = = = 1.00 1.00 1.00 1.00 = 1.00 = 1.00 ? 1.00 1.00 = 1.00 = ? 0.95 = = = = = = = = ? = = = = = = 
+END PHASEPROBS
